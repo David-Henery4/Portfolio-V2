@@ -27,3 +27,5 @@ yarn-error.log*
 ####-MY-IGNORES-#########################
 
 node_modules
+
+notes.notes
