@@ -5,9 +5,9 @@ import { Logo } from "../assets";
 
 const NavigationBar = () => {
   return (
-    <nav className="w-full flex justify-between items-center col-start-1 col-end-13 h-20 px-6 border-b border-b-primaryWhite/30 xtraSm:px-9 lrgDesk:col-start-1 lrgDesk:col-end-2 lrgDesk:flex-col lrgDesk:h-full lrgDesk:border-b-0 lrgDesk:border-r lrgDesk:border-r-primaryWhite/30 lrgDesk:py-11">
+    <nav className="w-full flex justify-between items-center col-start-1 col-end-13 h-20 px-6 border-b border-b-primaryWhite/30 xtraSm:px-[50px] lrgDesk:col-start-1 lrgDesk:col-end-2 lrgDesk:flex-col lrgDesk:h-full lrgDesk:border-b-0 lrgDesk:border-r lrgDesk:border-r-primaryWhite/30 lrgDesk:py-11 xtraLrgDesk:border border-primaryWhite/30 xtraLrgDesk:col-start-2 xtraLrgDesk:col-end-3 lrgDesk:px-8 xtraLrgDesk:h-[calc(100%-44px)] xtraLrgDesk:self-center xtraLrgDesk:rounded-md">
       <Logo className="w-[60px] hover:cursor-pointer" />
-      <ul className="hidden smTab:flex text-base font-extralight gap-4 lrgDesk:flex-col">
+      <ul className="hidden smTab:flex text-base font-extralight gap-4 lrgDesk:flex-col smDesk:gap-12">
         <li>
           <a href="#">Home</a>
         </li>

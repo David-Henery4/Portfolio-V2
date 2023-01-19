@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         mobGrid: "24px repeat(10,1fr) 24px",
-        tabGrid: "36px repeat(10,1fr) 36px",
+        tabGrid: "50px repeat(10,1fr) 50px",
         deskGrid: "1fr 50px repeat(10,1fr) 50px",
         xlDeskGrid: "24px 1fr 50px repeat(10,1fr) 50px",
       },
