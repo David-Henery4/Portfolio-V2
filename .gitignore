@@ -28,4 +28,5 @@ yarn-error.log*
 
 node_modules
 
+/notes.notes
 notes.notes

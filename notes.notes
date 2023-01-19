@@ -1,3 +1,8 @@
 CHANGE LOGO COLOUR
 
 try to handle VERY large screen sizes
+
+// MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED
+// min-h-screen
+
+leading-relaxed tracking-wider text-base
