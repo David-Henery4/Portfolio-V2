@@ -1,5 +1,5 @@
 import {NavigationBar} from "./components"
-import {Header, About, Projects} from "./pages";
+import {Header, About, Projects, Skills, Contact} from "./pages";
 
 // MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED
 // min-h-screen
@@ -11,7 +11,8 @@ function App() {
         <NavigationBar />
         {/* <Header /> */}
         {/* <About/> */}
-        <Projects/>
+        {/* <Projects/> */}
+        <Skills/>
       </div>
     </div>
   );
