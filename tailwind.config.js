@@ -17,6 +17,7 @@ module.exports = {
         tabGrid: "50px repeat(10,1fr) 50px",
         deskGrid: "1fr 50px repeat(10,1fr) 50px",
         xlDeskGrid: "24px 1fr 50px repeat(10,1fr) 50px",
+        projectGrid: "repeat(auto-fit, minmax(250px,.75fr))",
       },
       gridAutoRows: {
         deskRows: "min-content 1fr",

@@ -3,7 +3,7 @@ import { UnderLine } from '../assets';
 
 const Header = () => {
   return (
-    <header className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-16 smDesk:flex-row-reverse lrgDesk:col-start-3 lrgDesk:col-end-13 xtraLrgDesk:col-start-4 xtraLrgDesk:col-end-[14]">
+    <header className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-16 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14]">
       <div className="bg-primaryWhite/5 w-full flex items-center justify-center h-80 xtraSm:h-[400px] smTab:h-[480px] smDesk:h-full lrgDesk:h-[calc(100%-44px)] lrgDesk:mb-auto xtraLrgDesk:h-[calc(100%-64px)]">
         <div className="w-56 h-56 rounded-full bg-secondaryRed smTab:h-80 smTab:w-80"></div>
       </div>
