@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   return (
-    <main className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-14 pt-12 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14]">
+    <main className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-14 py-12 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14]">
       <div className="w-full grid place-items-center smDesk:justify-end smDesk:w-1/2">
         <picture>
           <source srcSet={dummyProfileImgDesk} media="(min-width: 64em)" />
