@@ -1,28 +1,28 @@
 const navData = [
   {
     id: 1,
-    name: "",
-    path: "",
+    name: "Home",
+    path: "/",
   },
   {
     id: 2,
-    name: "",
-    path: "",
+    name: "About",
+    path: "/about",
   },
   {
     id: 3,
-    name: "",
-    path: "",
+    name: "Projects",
+    path: "/projects",
   },
   {
     id: 4,
-    name: "",
-    path: "",
+    name: "Skills",
+    path: "/skills",
   },
   {
     id: 5,
-    name: "",
-    path: "",
+    name: "Contact",
+    path: "/contact",
   },
 ]
 

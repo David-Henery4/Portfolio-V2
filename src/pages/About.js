@@ -31,8 +31,8 @@ const About = () => {
         <div className="w-full flex flex-col items-center justify-center gap-10 xtraSm:justify-between xtraSm:flex-row max-w-sm">
           <button className="main-btn-styles primary-btn">Download C.V</button>
           <div className="flex justify-center items-center gap-16 xtraSm:gap-8">
-            <BsGithub className="text-6xl" />
-            <BsLinkedin className="text-6xl" />
+            <BsGithub className="text-6xl hover:cursor-pointer" />
+            <BsLinkedin className="text-6xl hover:cursor-pointer" />
           </div>
         </div>
       </div>
