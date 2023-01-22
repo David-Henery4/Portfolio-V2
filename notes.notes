@@ -6,3 +6,6 @@ try to handle VERY large screen sizes
 // min-h-screen
 
 leading-relaxed tracking-wider text-base
+
+// SET UP FORMSUBMIT.CO ON THE CONTACT FORM TO HANDLE THE 
+// SUBMISSIONS.

@@ -28,7 +28,7 @@ const useValidation = (callbackSubmit) => {
     const trimmedName = initialName.trim();
     if (trimmedName.length <= 0) {
       setNameError({
-        ...nameError,
+        id: 1,
         isError: true,
         msg: "Can't be empty",
       });
@@ -39,9 +39,8 @@ const useValidation = (callbackSubmit) => {
         isError: false,
         msg: "",
       });
-      setFinalValues({
-        ...finalValues,
-        name: trimmedName,
+      setFinalValues((oldValues) => {
+        return { ...oldValues, name: trimmedName };
       });
     }
   };
@@ -63,10 +62,9 @@ const useValidation = (callbackSubmit) => {
         isError: false,
         msg: "",
       });
-      setFinalValues({
-        ...finalValues,
-        email: trimmedEmail
-      })
+      setFinalValues((oldValues) => {
+        return { ...oldValues, email: trimmedEmail };
+      });
     }
   };
   const validateMessage = (initialMessage) => {
@@ -84,9 +82,8 @@ const useValidation = (callbackSubmit) => {
         isError: false,
         msg: "",
       });
-      setFinalValues({
-        ...finalValues,
-        message: trimmedMessage,
+      setFinalValues((oldValues) => {
+        return { ...oldValues, message: trimmedMessage };
       });
     }
   };
@@ -97,18 +94,24 @@ const useValidation = (callbackSubmit) => {
     validateEmail(email);
     validateMessage(message);
     setSubmitEventValue(eventValue);
-    setFinalValues({
-      ...finalValues,
-      re: re,
-    });
+    setFinalValues((oldValues) => {return {...oldValues, re: re}});
   };
   //
   const finalConfirmation = () => {
     const errors = [emailError, nameError, messageError];
-    callbackSubmit();
+    const isError = errors.some(error => error.isError)
+    const isValues = Object.values(finalValues).some(
+      (value) => value.length > 0
+    );
+    //
+    if (isValues && !isError){
+      callbackSubmit(finalValues, submitEventValue);
+    }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    finalConfirmation()
+  }, [nameError, emailError, messageError]);
 
   return {
     validate,
