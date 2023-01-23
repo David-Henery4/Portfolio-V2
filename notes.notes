@@ -2,6 +2,10 @@ CHANGE LOGO COLOUR
 
 try to handle VERY large screen sizes
 
+// BREAK UP A FEW AREAS INTO COMPONENTS
+
+// make logo a link back to home!
+
 // MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED
 // min-h-screen
 

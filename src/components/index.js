@@ -4,6 +4,7 @@ import SkillsBox from "./SkillsBox";
 import ContactForm from "./ContactForm";
 import Input from "./Input";
 import MessageInput from "./MessageInput";
+import Sidebar from "./Sidebar";
 
 export {
   NavigationBar,
@@ -11,5 +12,6 @@ export {
   SkillsBox,
   ContactForm,
   Input,
-  MessageInput
+  MessageInput,
+  Sidebar
 }
