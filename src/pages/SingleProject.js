@@ -1,20 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+// import { audiophileMockupsMd } from "../assets";
 import { audiophileMockups, audiophileMockupsMd } from "../assets";
+// import {mockup} from "../assets/project-assets/device-mockups/project-1/"
 
 const SingleProject = () => {
+  const { projectId } = useParams();
+  console.log(projectId);
   return (
     <div className="col-start-2 col-end-12 flex flex-col items-center justify-center gap-16 smDesk:flex-row smDesk:items-start smDesk:gap-24 lrgDesk:col-start-4 lrgDesk:col-end-[14]">
       <div className="pt-12 w-full flex flex-col items-start justify-center gap-11 smDesk:pt-24 smDesk:gap-0 smDesk:h-full smDesk:justify-center">
-        <Link className="primary-btn w-24 h-7 grid place-items-center rounded-md font-light smDesk:mb-auto">
+        <Link to="/projects" className="primary-btn w-24 h-7 grid place-items-center rounded-md font-light smDesk:mb-auto">
           Back
         </Link>
         <div className="w-full max-w-md mx-auto mb-auto">
           <picture>
-            <source srcSet={audiophileMockupsMd} media="(min-width: 39.37em)" />
+            <source
+              srcSet={require(`../assets/project-assets/device-mockups/project-${projectId}/device-mockups-large.png`)}
+              media="(min-width: 39.37em)"
+            />
             <img
               className="w-full"
-              src={audiophileMockups}
+              src={require(`../assets/project-assets/device-mockups/project-${projectId}/device-mockups-small.png`)}
               alt="project-device-mockup"
             />
           </picture>
@@ -35,9 +42,7 @@ const SingleProject = () => {
           </p>
         </section>
         <section className="w-full flex flex-col justify-center items-center text-center gap-7 smDesk:text-left smDesk:items-start">
-          <h3 className="text-3xl font-extralight">
-            Technologies used:
-          </h3>
+          <h3 className="text-3xl font-extralight">Technologies used:</h3>
           <ul className="flex justify-center items-center flex-wrap gap-3 max-w-md smDesk:justify-start">
             <li>
               <p>HTML</p>
