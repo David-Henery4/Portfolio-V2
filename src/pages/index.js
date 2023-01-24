@@ -3,6 +3,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Skills from "./Skills";
+import SingleProject from "./SingleProject";
 
 export {
   Header,
@@ -10,4 +11,5 @@ export {
   Projects,
   Contact,
   Skills,
+  SingleProject,
 }

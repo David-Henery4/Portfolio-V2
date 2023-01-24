@@ -4,7 +4,11 @@ try to handle VERY large screen sizes
 
 // BREAK UP A FEW AREAS INTO COMPONENTS
 
+// CHECK LETTER SPACING IS CONSISTENT ON SUB-HEADINGS
+
 // make logo a link back to home!
+
+// add accent graphics at the end
 
 // MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED
 // min-h-screen

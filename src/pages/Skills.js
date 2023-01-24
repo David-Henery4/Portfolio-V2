@@ -1,4 +1,5 @@
 import React from 'react'
+import skillsData from '../skills-data/skillsData';
 import { CssIcon, HtmlIcon, JavascriptIcon, UnderLine } from '../assets'
 import { SkillsBox } from '../components';
 
@@ -11,15 +12,10 @@ const Skills = () => {
           <UnderLine className="w-48" />
         </span>
       </h2>
-      <div className="w-full grid gap-11 grid-cols-skillsGrid">
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
-        <SkillsBox />
+      <div className="w-full grid gap-6 grid-cols-skillsGrid text-center">
+        {skillsData.map(item => {
+          return <SkillsBox key={item.id} {...item}/>;
+        })}
       </div>
     </div>
   );

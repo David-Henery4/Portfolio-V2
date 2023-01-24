@@ -1,12 +1,12 @@
 import React from 'react'
 import { CssIcon, HtmlIcon, JavascriptIcon, UnderLine } from "../assets";
 
-const SkillsBox = () => {
+const SkillsBox = ({skill, svg}) => {
   return (
-    <div className="px-12 py-5 flex flex-col justify-center items-center gap-4">
-      <CssIcon />
-      <div className="w-32 h-[2px] bg-primaryWhite/20"></div>
-      <h4 className="text-3xl">CSS</h4>
+    <div className="p-5 h-52 flex flex-col justify-start items-center gap-4">
+      {svg}
+      <div className="w-32 h-[1%] bg-primaryWhite/20"></div>
+      <h4 className="text-xl h-[24.5%]">{skill}</h4>
     </div>
   );
 }
