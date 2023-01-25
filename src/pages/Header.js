@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { UnderLine } from '../assets';
 
 const Header = () => {
@@ -27,7 +28,9 @@ const Header = () => {
         </h1>
         <div className="flex flex-col justify-center items-center gap-7 xtraSm:flex-row">
           <button className="main-btn-styles primary-btn">Download C.V</button>
-          <button className="main-btn-styles secondary-btn">Projects</button>
+          <Link to={"/projects"} className="main-btn-styles secondary-btn grid place-items-center">
+            Projects
+          </Link>
         </div>
       </div>
     </header>

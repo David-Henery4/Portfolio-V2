@@ -3,9 +3,9 @@ const projectsData = [
     id: 1,
     name: "Audiophile",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
+      "Audiophile is a multi page Ecommerce site for different audio equipment.",
     descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "Audiophile is a music equipment ecommerce site. Users can browse different products and categries. It also has cart full cart functionality and checkout validation for when users want to make a purchase.",
     thumbNail: "audiophile-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -16,6 +16,7 @@ const projectsData = [
       "React",
       "React-Router-6",
       "Redux-Toolkit",
+      "Redux-Persist",
     ],
     repoUrl: "https://github.com/David-Henery4/Audiophile-Ecommerce-site",
     liveUrl: "https://audiophile-ecommerce-store.netlify.app",
@@ -24,9 +25,9 @@ const projectsData = [
     id: 2,
     name: "Entertainment",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
+      "This multi-page entertainment web app, where users can bookmark and search for different shows and movies.",
     descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "Entertainment is a multi-page entertainment app. Users can search for different content and also view filtered pages that show all the T.V shows available or all the movies that are available. It also has a dedicated page to display all the different movies & T.V shows the users has bookmarked.",
     thumbNail: "entertainment-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -37,8 +38,10 @@ const projectsData = [
       "React",
       "React-Router-6",
       "Redux-Toolkit",
-      "Tailwind",
+      "TailwindCSS",
       "Axios",
+      "Json-Server",
+      "Redux-persist",
     ],
     repoUrl: "https://github.com/David-Henery4/Entertainment-V1",
     liveUrl: "https://thats-entertainment-v1.netlify.app",
@@ -47,9 +50,9 @@ const projectsData = [
     id: 3,
     name: "Kanban Task Manager",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
+      "Kanban Tasks manager is a fully-functional task management app with a light/dark mode toggle. It also has a drag and drop feature.",
     descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "Kanban Tasks is a task management app that allows users to control different tasks, update their status and create different task boards. Users can also change their tasks status by dragging them into different columns.",
     thumbNail: "kanban-task-manager-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -58,7 +61,7 @@ const projectsData = [
       "CSS/SCSS",
       "Javascript",
       "React",
-      "React-Router-6",
+      "Redux-Persist",
       "Redux-Toolkit",
     ],
     repoUrl: "https://github.com/David-Henery4/Kanban-Task-Manager",
@@ -68,9 +71,8 @@ const projectsData = [
     id: 4,
     name: "Interactive Comments Section",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
-    descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "This is a fully interactive comments section, where users can create, edit, like, reply and delete comments",
+    descLong: "Interactive Comments Section is fully interactive comments section. where users can add, edit and delete their own messages. Users can also reply and like other messages. Messages also display a dynamic timer to keep track of when a message was posted.",
     thumbNail: "interactive-comments-section-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -79,7 +81,7 @@ const projectsData = [
       "CSS/SCSS",
       "Javascript",
       "React",
-      "React-Router-6",
+      "Redux-Persist",
       "Redux-Toolkit",
     ],
     repoUrl: "https://github.com/David-Henery4/Interactive-Comments-Section",
@@ -89,9 +91,9 @@ const projectsData = [
     id: 5,
     name: "Pay API",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
+      "This is a 4 page website, for a company that sells and distributes different APIs.",
     descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "This is a 4 page website, for a company called Pay API, that sells and distributes different APIs. It has a shared email sign-up thoughout most pages which has validation. It also has a full contact form page which also provides a validation check.",
     thumbNail: "pay-api-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -101,7 +103,7 @@ const projectsData = [
       "Javascript",
       "React",
       "React-Router-6",
-      "Redux-Toolkit",
+      "TailwindCSS",
     ],
     repoUrl: "https://github.com/David-Henery4/pay-api-website",
     liveUrl: "https://apy-api-site.netlify.app",
@@ -110,9 +112,9 @@ const projectsData = [
     id: 6,
     name: "Where in the world?",
     descShort:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
+      "Allows users to search for countries and see information about them.",
     descLong:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
+      "This application lets users search for different countries around the world and find out details about them. There is also an option to allow users to filter countries by different regions. It also has a dark/light mode toggle for the users preference",
     thumbNail: "where-in-the-world-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
@@ -123,10 +125,11 @@ const projectsData = [
       "React",
       "React-Router-6",
       "Redux-Toolkit",
+      "Axios",
     ],
     repoUrl: "https://github.com/David-Henery4/Where-in-the-world",
     liveUrl: "https://where-abouts-in-the-world.netlify.app",
   },
 ];
 
-export default projectsData
+export default projectsData;
