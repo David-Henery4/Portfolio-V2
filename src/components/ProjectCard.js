@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 import { dummyProjectCardImg } from "../assets";
 
-const ProjectCard = ({id, name, descShort, mobileScreenshot }) => {
+const ProjectCard = ({id, name, descShort, thumbNail }) => {
   return (
     <div className="group w-full h-80 relative rounded-xl overflow-hidden">
       <img
         className="w-full h-full object-cover object-top absolute top-0 left-0"
-        src={require(`../assets/project-assets/${mobileScreenshot}`)}
+        src={require(`../assets/project-assets/thumbs/${thumbNail}`)}
         alt=""
       />
       <div className="bg-darkShade/50 w-full h-full relative z-10 pt-10">

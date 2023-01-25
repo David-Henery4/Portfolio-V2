@@ -8,6 +8,16 @@ try to handle VERY large screen sizes
 
 // make logo a link back to home!
 
+// MIGHT RESTRUCTURE FOLDERS & FILE LAYOUTS FOR THE  MOCKUPS
+
+// make sure subheadings styles are consistant
+
+// add more projects
+
+// MIGHT NOT USE REDUX-TOOLKIT & INSTEAD USE "USECONTEXT"
+// BECAUSE REDUX SEEMS LIKE OVERKILL
+// (REMOVE/UNINSTALL REDUX-TOOLKIT)
+
 // add accent graphics at the end
 
 // MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED

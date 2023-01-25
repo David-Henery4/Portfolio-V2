@@ -6,8 +6,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "audiophile-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -28,8 +27,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "entertainment-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -52,8 +50,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "kanban-task-manager-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -74,8 +71,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "interactive-comments-section-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -96,8 +92,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "pay-api-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -118,8 +113,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel saepe culpa eveniet a officia soluta quod doloribus sequi.",
     descLong:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt architecto assumenda atque laudantium. Perferendis reprehenderit est iste vitae perspiciatis soluta provident illum eius expedita placeat saepe quibusdam mollitia ipsam aspernatur omnis aperiam totam, dolore quo ad ex similique minus qui rerum? Quas, nesciunt debitis placeat nam quisquam amet sed ut vel fugit! Illum ab odit cumque consequuntur voluptates cupiditate!",
-    mobileScreenshot: "project-card-placeholder.png",
-    desktopScreenshot: "project-card-placeholder.png",
+    thumbNail: "where-in-the-world-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
