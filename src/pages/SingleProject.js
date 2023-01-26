@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGlobalContext } from "../hooks/Context";
-// import {mockup} from "../assets/project-assets/device-mockups/project-1/"
+
 
 const SingleProject = () => {
   const { projectId } = useParams();

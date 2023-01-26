@@ -1,11 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { UnderLine } from '../assets';
+import React from "react";
+import { Link } from "react-router-dom";
+import { UnderLine, ArrowsUp, BgLineDots, BgWave1, BgWave2, BgWaveLong } from "../assets";
+
 
 const Header = () => {
   return (
-    <header className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-16 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14]">
-      <div className="bg-primaryWhite/5 w-full flex items-center justify-center h-80 xtraSm:h-[400px] smTab:h-[480px] smDesk:h-full lrgDesk:h-[calc(100%-44px)] lrgDesk:mb-auto xtraLrgDesk:h-[calc(100%-64px)]">
+    <header className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-16 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14] relative">
+      <BgWave2 className="absolute top-0 -left-7 lrgDesk:left-1/3 lrgDesk:top-8" />
+      <BgWaveLong className="absolute -bottom-28 -left-7 xtraSm:-left-16 lrgDesk:-bottom-14 lrgDesk:-left-0"/>
+      <div className="bg-primaryWhite/5 w-full flex items-center justify-center h-80 xtraSm:h-[400px] smTab:h-[480px] smDesk:h-full lrgDesk:h-[calc(100%-44px)] lrgDesk:mb-auto xtraLrgDesk:h-[calc(100%-64px)] relative">
+        <ArrowsUp className="absolute -left-2" />
+        <BgLineDots className="absolute -bottom-14 -right-24 lrgDesk:-bottom-14 lrgDesk:-right-14" />
         <div className="w-56 h-56 rounded-full bg-secondaryRed smTab:h-80 smTab:w-80"></div>
       </div>
       {/**/}
@@ -28,13 +33,16 @@ const Header = () => {
         </h1>
         <div className="flex flex-col justify-center items-center gap-7 xtraSm:flex-row">
           <button className="main-btn-styles primary-btn">Download C.V</button>
-          <Link to={"/projects"} className="main-btn-styles secondary-btn grid place-items-center">
+          <Link
+            to={"/projects"}
+            className="main-btn-styles secondary-btn grid place-items-center"
+          >
             Projects
           </Link>
         </div>
       </div>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;
