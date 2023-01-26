@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGlobalContext } from "../hooks/Context";
+import {BgLineDots, BgWaveStraight ,BgWave2} from "../assets"
 
 
 const SingleProject = () => {
@@ -13,7 +14,9 @@ const SingleProject = () => {
   }, []);
   //
   return (
-    <div className="col-start-2 col-end-12 flex flex-col items-center justify-center gap-16 smDesk:flex-row smDesk:items-start smDesk:gap-24 lrgDesk:col-start-4 lrgDesk:col-end-[14]">
+    <div className="col-start-2 col-end-12 flex flex-col items-center justify-center gap-16 smDesk:flex-row smDesk:items-start smDesk:gap-24 lrgDesk:col-start-4 lrgDesk:col-end-[14] relative">
+      <BgWave2 className="absolute -bottom-16 -left-7 rotate-[55deg] smTab:-bottom-4 smDesk:bottom-4 smDesk:left-10" />
+      <BgWaveStraight className="absolute -top-20 -right-44 xtraSm:-top-16 lrgDesk:-top-28 lrgDesk:-right-20" />
       <div className="pt-12 w-full flex flex-col items-start justify-center gap-11 smDesk:pt-24 smDesk:gap-0 smDesk:h-full smDesk:justify-center">
         <Link
           to="/projects"
@@ -22,13 +25,14 @@ const SingleProject = () => {
           Back
         </Link>
         <div className="w-full max-w-md mx-auto mb-auto">
-          <picture>
+          <picture className="relative">
+            <BgLineDots className="w-36 absolute -top-8 -left-0 smTab:w-56 smTab:-left-4 smTab:-top-4" />
             <source
               srcSet={require(`../assets/project-assets/device-mockups/project-${projectId}/device-mockups-large.png`)}
               media="(min-width: 39.37em)"
             />
             <img
-              className="w-full"
+              className="w-full relative z-10"
               src={require(`../assets/project-assets/device-mockups/project-${projectId}/device-mockups-small.png`)}
               alt="project-device-mockup"
             />
@@ -38,7 +42,7 @@ const SingleProject = () => {
       {/**/}
       <div className="w-full flex-col flex justify-center items-center gap-14 smDesk:py-24 smDesk:items-start">
         <section className="w-full text-center flex flex-col justify-center items-center gap-10 smDesk:items-start smDesk:text-left">
-          <h2 className="text-5xl font-extralight smTab:text-7xl">
+          <h2 className="text-5xl font-extralight smTab:text-7xl break-all xtraSm:break-normal">
             {singleProject.name}
           </h2>
           <p className="leading-relaxed tracking-wider text-base max-w-md">

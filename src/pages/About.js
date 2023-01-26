@@ -1,5 +1,5 @@
 import React from 'react'
-import { dummyProfileImgMob, dummyProfileImgDesk, dummyProfileImgTab, BgWavyDottedLine, BgLineDots, BgMultipleWaves,  } from '../assets'
+import { dummyProfileImgMob, dummyProfileImgDesk, dummyProfileImgTab,  BgLineDots, BgMultipleWaves,  } from '../assets'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {

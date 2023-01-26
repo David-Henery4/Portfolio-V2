@@ -10,6 +10,7 @@ import {ReactComponent as BgWave2} from "../assets/bg-wave-2.svg"
 import {ReactComponent as BgWaveLong} from "../assets/bg-wave-long.svg"
 import {ReactComponent as BgWaveStraight} from "../assets/bg-wave-straight.svg"
 import {ReactComponent as BgWavyDottedLine} from "../assets/bg-wavy-dotted-line.svg"
+import {ReactComponent as Bg2Waves} from "../assets/bg-2-waves.svg"
 
 // IMAGES
 import dummyProfileImgMob from "../assets/placeholder-profile-img-mob.png"
@@ -50,5 +51,6 @@ export {
   BgWave2,
   BgWaveLong,
   BgWaveStraight,
-  BgWavyDottedLine
+  BgWavyDottedLine,
+  Bg2Waves
 }
