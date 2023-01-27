@@ -1,11 +1,18 @@
 import React from "react";
-import {BgCircle} from "../assets"
+import { motion } from "framer-motion";
+import { BgCircle } from "../assets";
 import { ContactForm } from "../components";
 
 const Contact = () => {
   return (
-    <div className="w-full col-start-2 col-end-12 lrgDesk:col-start-4 lrgDesk:col-end-[14] flex flex-col justify-center items-center py-12 gap-20 lrgDesk:gap-32 relative">
-      <BgCircle className="absolute w-56 -top-36 -right-40 smDesk:w-60 smDesk:"/>
+    <motion.main
+      className="w-full col-start-2 col-end-12 lrgDesk:col-start-4 lrgDesk:col-end-[14] flex flex-col justify-center items-center py-12 gap-20 lrgDesk:gap-32 relative"
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <BgCircle className="absolute w-56 -top-36 -right-40 smDesk:w-60 smDesk:-top-20 smDesk:-right-32 lrgDesk:w-96 lrgDesk:-top-44 lrgDesk:-right-48" />
       <h2 className="text-5xl font-extralight smTab:text-7xl text-center tracking-widest">
         Contact Me
       </h2>
@@ -18,7 +25,7 @@ const Contact = () => {
           Submit
         </button>
       </div>
-    </div>
+    </motion.main>
   );
 };
 

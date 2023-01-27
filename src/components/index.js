@@ -1,3 +1,4 @@
+import AnimatedRoutes from "./AnimatedRoutes";
 import NavigationBar from "./NavigationBar";
 import ProjectCard from "./ProjectCard";
 import SkillsBox from "./SkillsBox";
@@ -13,5 +14,6 @@ export {
   ContactForm,
   Input,
   MessageInput,
-  Sidebar
+  Sidebar,
+  AnimatedRoutes,
 }

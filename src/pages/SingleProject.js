@@ -1,9 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGlobalContext } from "../hooks/Context";
-import {BgLineDots, BgWaveStraight ,BgWave2} from "../assets"
-
+import { BgLineDots, BgWaveStraight, BgWave2 } from "../assets";
 
 const SingleProject = () => {
   const { projectId } = useParams();
@@ -14,7 +14,13 @@ const SingleProject = () => {
   }, []);
   //
   return (
-    <div className="col-start-2 col-end-12 flex flex-col items-center justify-center gap-16 smDesk:flex-row smDesk:items-start smDesk:gap-24 lrgDesk:col-start-4 lrgDesk:col-end-[14] relative">
+    <motion.main
+      className="col-start-2 col-end-12 flex flex-col items-center justify-center gap-16 smDesk:flex-row smDesk:items-start smDesk:gap-24 lrgDesk:col-start-4 lrgDesk:col-end-[14] relative"
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <BgWave2 className="absolute -bottom-16 -left-7 rotate-[55deg] smTab:-bottom-4 smDesk:bottom-4 smDesk:left-10" />
       <BgWaveStraight className="absolute -top-20 -right-44 xtraSm:-top-16 lrgDesk:-top-28 lrgDesk:-right-20" />
       <div className="pt-12 w-full flex flex-col items-start justify-center gap-11 smDesk:pt-24 smDesk:gap-0 smDesk:h-full smDesk:justify-center">
@@ -80,7 +86,7 @@ const SingleProject = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.main>
   );
 };
 

@@ -1,13 +1,20 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import { dummyProfileImgMob, dummyProfileImgDesk, dummyProfileImgTab,  BgLineDots, BgMultipleWaves,  } from '../assets'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   return (
-    <main className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-14 py-12 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14] relative">
+    <motion.main
+      className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-14 py-12 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14] relative"
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="w-full grid place-items-center smDesk:justify-end smDesk:w-1/2">
-        <picture className='relative'>
-        <BgLineDots className='w-36 absolute -top-16 -left-14 smTab:w-56 smTab:-left-20 smTab:-top-14'/>
+        <picture className="relative">
+          <BgLineDots className="w-36 absolute -top-16 -left-14 smTab:w-56 smTab:-left-20 smTab:-top-14" />
           <source srcSet={dummyProfileImgDesk} media="(min-width: 64em)" />
           <source srcSet={dummyProfileImgTab} media="(min-width: 39.37em)" />
           <img
@@ -37,8 +44,8 @@ const About = () => {
           </div>
         </div>
       </div>
-        <BgMultipleWaves className='absolute -bottom-28 -right-28 smTab:-right-16 smDesk:right-1/2 smDesk:-bottom-20 lrgDesk:-bottom-12'/>
-    </main>
+      <BgMultipleWaves className="absolute -bottom-28 -right-28 smTab:-right-16 smDesk:right-1/2 smDesk:-bottom-20 lrgDesk:-bottom-12" />
+    </motion.main>
   );
 }
 
