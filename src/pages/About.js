@@ -10,7 +10,12 @@ const About = () => {
       initial={{ x: 300, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -300, opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        delay: .25,
+      }}
     >
       <div className="w-full grid place-items-center smDesk:justify-end smDesk:w-1/2">
         <picture className="relative">

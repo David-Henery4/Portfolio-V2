@@ -11,7 +11,12 @@ const Projects = () => {
       initial={{ x: 300, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -300, opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        delay: .25,
+      }}
     >
       <h2 className="text-5xl font-extralight smTab:text-7xl">My Projects</h2>
       <div className="w-full grid grid-cols-projectGrid gap-8 justify-center relative">

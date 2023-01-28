@@ -10,7 +10,12 @@ const Contact = () => {
       initial={{ x: 300, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -300, opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        delay: .25,
+      }}
     >
       <BgCircle className="absolute w-56 -top-36 -right-40 smDesk:w-60 smDesk:-top-20 smDesk:-right-32 lrgDesk:w-96 lrgDesk:-top-44 lrgDesk:-right-48" />
       <h2 className="text-5xl font-extralight smTab:text-7xl text-center tracking-widest">
