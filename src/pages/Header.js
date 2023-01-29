@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { headerImgPlaceholder } from "../assets";
 import {
   UnderLine,
   ArrowsUp,
@@ -13,14 +14,14 @@ const Header = () => {
   return (
     <motion.header
       className="w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-16 smDesk:flex-row-reverse lrgDesk:col-start-4 lrgDesk:col-end-[14] relative"
-      initial={{ x: 300, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: -300, opacity: 0 }}
+      initial={{ y: 300, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -300, opacity: 0 }}
       transition={{
         type: "spring",
         stiffness: 260,
         damping: 20,
-        delay: .25,
+        delay: 0.25,
       }}
     >
       <BgWave2 className="absolute top-0 -left-7 lrgDesk:left-1/3 lrgDesk:top-8" />
@@ -28,7 +29,15 @@ const Header = () => {
       <div className="bg-primaryWhite/5 w-full flex items-center justify-center h-80 xtraSm:h-[400px] smTab:h-[480px] smDesk:h-full lrgDesk:h-[calc(100%-44px)] lrgDesk:mb-auto xtraLrgDesk:h-[calc(100%-64px)] relative">
         <ArrowsUp className="absolute -left-2" />
         <BgLineDots className="absolute -bottom-14 -right-24 lrgDesk:-bottom-14 lrgDesk:-right-14" />
-        <div className="w-56 h-56 rounded-full bg-secondaryRed smTab:h-80 smTab:w-80"></div>
+        <div className="w-56 h-56 bg-secondaryRed smTab:h-80 smTab:w-80 relative header-circle group hover:w-[234px] hover:h-[234px] hover:smTab:w-[330px] hover:smTab:h-[330px] transition-all">
+          <div className="w-full h-96 relative bottom-1/4 scale-110 group-hover:scale-125 transition-all">
+            <img
+              className="w-full h-full object-contain"
+              src={headerImgPlaceholder}
+              alt="header-profile-circle-img"
+            />
+          </div>
+        </div>
       </div>
       {/**/}
       <div className="w-full text-center flex flex-col justify-center items-center gap-20 smDesk:items-start">

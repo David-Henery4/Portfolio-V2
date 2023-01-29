@@ -1,0 +1,13 @@
+.header-circle{
+      border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    clip-path: inset(-30% 0% 0% 0% round 0% 0% 50% 50%);
+}
+
+
+.img-container{
+    position: relative;
+    bottom: 21%;
+    scale: 1.2;
+    height: 400px;
+}

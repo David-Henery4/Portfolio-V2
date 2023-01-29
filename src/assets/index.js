@@ -16,6 +16,7 @@ import {ReactComponent as Bg2Waves} from "../assets/bg-2-waves.svg"
 import dummyProfileImgMob from "../assets/placeholder-profile-img-mob.png"
 import dummyProfileImgTab from "../assets/placeholder-profile-img-tab.png"
 import dummyProfileImgDesk from "../assets/placeholder-profile-img-desk.png"
+import headerImgPlaceholder from "../assets/header-img-placeholder.png";
 
 // ICONS
 import {ReactComponent as CssIcon} from "../assets/skills-icons/icon-css.svg"
@@ -34,6 +35,7 @@ export {
   dummyProfileImgMob,
   dummyProfileImgDesk,
   dummyProfileImgTab,
+  headerImgPlaceholder,
   CssIcon,
   HtmlIcon,
   JavascriptIcon,

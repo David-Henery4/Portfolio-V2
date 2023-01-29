@@ -7,9 +7,9 @@ const Contact = () => {
   return (
     <motion.main
       className="w-full col-start-2 col-end-12 lrgDesk:col-start-4 lrgDesk:col-end-[14] flex flex-col justify-center items-center py-12 gap-20 lrgDesk:gap-32 relative"
-      initial={{ x: 300, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: -300, opacity: 0 }}
+      initial={{ y: 300, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -300, opacity: 0 }}
       transition={{
         type: "spring",
         stiffness: 260,
