@@ -138,7 +138,7 @@ const projectsData = [
       "A landing page for a company that sell software that helps users bookmark and orginise websites.",
     descLong:
       "Bookmarks is a landing page for a company that sells sfotware that helps to orginse & bookmark your website. It has multiple sections, including a tabbed features section that allows you to switch between the tabs for different features. It also has an accordion section for FAQs and also some light email validation on a contact us section.",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "bookmarks-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: ["HTML", "CSS/SCSS", " Javascript", "TailwindCSS"],
@@ -152,7 +152,7 @@ const projectsData = [
       "Ip Address Tracker let's users see their own Ip address information aswell as search for details about other Ip addresses.",
     descLong:
       "Ip address tracker allows users to search for details about a specific Ip address, while also showing details about the users Ip address. It also has an interactive map which shows the location of the users initial ip address location and any seearched for ip addresses.",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "ip-address-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -175,7 +175,7 @@ const projectsData = [
       "Languisa is a fictional language learning site which offers users different ways of learning languages. It also has a greeting animation in different languages.",
     descLong:
       "Languisa is a fictional language learning site. Which offers users multiple ways of learning a new language. The site has a small greetings animation, which displays greetings in different languages. It also has a slideshow section showcasing various testimonials",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "languisa-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: ["HTML", "CSS/SCSS", "Javascript", "Git", "Parcel"],
@@ -189,7 +189,7 @@ const projectsData = [
       "Gives the most up to date and available weather data on mars, from nasa's curiosity rover.",
     descLong:
       "Provides the users with weather data from mars, from nasa's curiosity rover. It allows them to see the weather for the most current day aswell as the previous week. Also contains a fahrenheit to celsius converter.",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "mars-weather-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: ["HTML", "CSS", "Javascript", "Git", "Parcel"],
@@ -203,7 +203,7 @@ const projectsData = [
       "This is a dashboard style site for people to check for basic information about a football team.",
     descLong:
       "myTeam lets users search for stats & information about their favourite football teams. Users can get different statistics about their teams current season and can get information about their teams history and more! myTeam also has a light mode & darkmode for the users preference.",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "myTeam-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
@@ -224,7 +224,7 @@ const projectsData = [
       "A pomodoro timer for users to keep track of time using the pomodoro technique.",
     descLong:
       "This app lets users to use a timer when using the pomodoro technique. It also has different options to allow the user to select a timer for their break time, one for a short break and one for a long break. The app also has a settings menu so users can select custom durations for their timers, as well as being able to choose different font types & a different colour scheme.",
-    thumbNail: "where-in-the-world-thumb.png",
+    thumbNail: "pomodoro-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
