@@ -1,11 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { headerImgPlaceholder } from "../assets";
+import { HeaderContent, HeaderImage } from "../components";
 import {
-  UnderLine,
-  ArrowsUp,
-  BgLineDots,
   BgWave2,
   BgWaveLong,
 } from "../assets";
@@ -26,47 +22,9 @@ const Header = () => {
     >
       <BgWave2 className="absolute top-0 -left-7 lrgDesk:left-1/3 lrgDesk:top-8" />
       <BgWaveLong className="absolute -bottom-28 -left-7 xtraSm:-left-16 lrgDesk:-bottom-14 lrgDesk:-left-0" />
-      <div className="bg-primaryWhite/5 w-full flex items-center justify-center h-80 xtraSm:h-[400px] smTab:h-[480px] smDesk:h-full lrgDesk:h-[calc(100%-44px)] lrgDesk:mb-auto xtraLrgDesk:h-[calc(100%-64px)] relative">
-        <ArrowsUp className="absolute -left-2" />
-        <BgLineDots className="absolute -bottom-14 -right-24 lrgDesk:-bottom-14 lrgDesk:-right-14" />
-        <div className="w-56 h-56 bg-secondaryRed smTab:h-80 smTab:w-80 relative header-circle group hover:w-[234px] hover:h-[234px] hover:smTab:w-[330px] hover:smTab:h-[330px] transition-all">
-          <div className="w-full h-96 relative bottom-1/4 scale-110 group-hover:scale-125 transition-all">
-            <img
-              className="w-full h-full object-contain"
-              src={headerImgPlaceholder}
-              alt="header-profile-circle-img"
-            />
-          </div>
-        </div>
-      </div>
+      <HeaderImage/>
       {/**/}
-      <div className="w-full text-center flex flex-col justify-center items-center gap-20 smDesk:items-start">
-        <h1 className="text-2xl font-extralight inline-flex flex-col justify-center items-center gap-4 smDesk:items-start">
-          Hi, I'm David Henery
-          <span className="text-5xl tracking-wider leading-[58px] font-normal smTab:text-7xl smDesk:text-left">
-            {" "}
-            Frontend Developer
-          </span>
-          <span className="text-3xl">
-            {" "}
-            I bring designs to
-            <span className="block text-4xl italic text-secondaryRed mt-4 relative xtraSm:inline">
-              {" "}
-              LIFE
-              <UnderLine className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-36" />
-            </span>
-          </span>
-        </h1>
-        <div className="flex flex-col justify-center items-center gap-7 xtraSm:flex-row">
-          <button className="main-btn-styles primary-btn">Download C.V</button>
-          <Link
-            to={"/projects"}
-            className="main-btn-styles secondary-btn grid place-items-center"
-          >
-            Projects
-          </Link>
-        </div>
-      </div>
+      <HeaderContent/>
     </motion.header>
   );
 };

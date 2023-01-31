@@ -16,10 +16,7 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    // e.preventDefault();
-    console.log(e)
-    console.log("data submitted", values);
-    //   e.target.submit()
+    // console.log("data submitted", values);
   };
   //
   const { emailError, messageError, nameError, validate } =

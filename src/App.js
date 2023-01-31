@@ -1,10 +1,6 @@
 import {NavigationBar, Sidebar} from "./components"
 import { Outlet } from "react-router-dom";
-import {Header, About, Projects, Skills, Contact} from "./pages";
 import { useState } from "react";
-
-// MIGHT CHANGE CONTENT HEIGHT TO TAKE AS MUCH SCREEN AS CONTENT NEEDED
-// min-h-screen
 
 function App() {
   const [isSidebarOpen,setIsSidebarOpen] = useState(false)

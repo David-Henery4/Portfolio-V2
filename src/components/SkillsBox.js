@@ -1,5 +1,4 @@
 import React from 'react'
-import { CssIcon, HtmlIcon, JavascriptIcon, UnderLine } from "../assets";
 
 const SkillsBox = ({skill, svg}) => {
   return (
