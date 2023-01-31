@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../assets";
+import { Logo, logoRed } from "../assets";
 import { NavLink } from "react-router-dom";
 import navData from "../navigation-data/navData";
 import { IoClose } from "react-icons/io5";
@@ -33,11 +33,20 @@ const Sidebar = ({setIsSidebarOpen, isSidebarOpen}) => {
   //
   return (
     <div
-      className={`fixed top-0 left-0 h-full w-full z-50 bg-darkShade transition-all ${isSidebarOpen ? "-translate-x-0": "-translate-x-full"}`}
+      className={`fixed top-0 left-0 h-full w-full z-50 bg-darkShade transition-all ${
+        isSidebarOpen ? "-translate-x-0" : "-translate-x-full"
+      }`}
     >
       <div className="w-full flex justify-between items-center px-5 py-3 border-b border-b-primaryWhite/30">
-        <Logo className="w-[60px] hover:cursor-pointer" />
-        <IoClose className="text-4xl hover:cursor-pointer" onClick={handleCloseSidebar}/>
+        <img
+          src={logoRed}
+          alt="sidebar-logo"
+          className="w-[60px] hover:cursor-pointer"
+        />
+        <IoClose
+          className="text-4xl hover:cursor-pointer"
+          onClick={handleCloseSidebar}
+        />
       </div>
       <div className="w-full pt-12 px-5">
         <ul className="flex flex-col justify-center items-start gap-7">
