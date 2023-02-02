@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowsUp, BgLineDots, headerImgPlaceholder, headerImg } from "../assets";
+import { ArrowsUp, BgLineDots, headerImg } from "../assets";
 
 
 const HeaderImage = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Logo, logoRed } from "../assets";
+import {  logoRed } from "../assets";
 import navData from "../navigation-data/navData";
 import { NavLink, Link } from "react-router-dom";
 
