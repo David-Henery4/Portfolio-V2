@@ -1,35 +1,32 @@
-import React from "react";
-import { Logo, logoRed } from "../assets";
-import { NavLink } from "react-router-dom";
+import { logoRed } from "../assets";
+import { NavLink, Link } from "react-router-dom";
 import navData from "../navigation-data/navData";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const Sidebar = ({setIsSidebarOpen, isSidebarOpen}) => {
-  const [isLargeScreen,setIsLargeScreen] = useState(false)
+
+const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   //
-  const handleCloseSidebar = () => (
-    setIsSidebarOpen(false)
-  )
+  const handleCloseSidebar = () => setIsSidebarOpen(false);
   const closeSideOnBiggerScreens = (matches) => {
-    setIsLargeScreen(matches)
-  }
+    setIsLargeScreen(matches);
+  };
   //
   useEffect(() => {
-    if (isLargeScreen){
-      setIsSidebarOpen(false)
+    if (isLargeScreen) {
+      setIsSidebarOpen(false);
     }
-  },[isLargeScreen])
+  }, [isLargeScreen]);
   //
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 630px)")
-    setIsLargeScreen(mediaQuery.matches)
-    mediaQuery.addEventListener("change", closeSideOnBiggerScreens)
+    const mediaQuery = window.matchMedia("(min-width: 630px)");
+    setIsLargeScreen(mediaQuery.matches);
+    mediaQuery.addEventListener("change", closeSideOnBiggerScreens);
     return () => {
-      return mediaQuery.removeEventListener("change",closeSideOnBiggerScreens)
-    }
-  }, [])
+      return mediaQuery.removeEventListener("change", closeSideOnBiggerScreens);
+    };
+  }, []);
   //
   return (
     <div
@@ -38,11 +35,14 @@ const Sidebar = ({setIsSidebarOpen, isSidebarOpen}) => {
       }`}
     >
       <div className="w-full flex justify-between items-center px-5 py-3 border-b border-b-primaryWhite/30">
-        <img
-          src={logoRed}
-          alt="sidebar-logo"
-          className="w-[60px] hover:cursor-pointer"
-        />
+        <Link to="/">
+          <img
+            src={logoRed}
+            alt="sidebar-logo"
+            className="w-[60px] hover:cursor-pointer"
+            onClick={handleCloseSidebar}
+          />
+        </Link>
         <IoClose
           className="text-4xl hover:cursor-pointer"
           onClick={handleCloseSidebar}

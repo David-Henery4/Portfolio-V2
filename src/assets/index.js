@@ -16,7 +16,11 @@ import {ReactComponent as Bg2Waves} from "../assets/bg-2-waves.svg"
 import dummyProfileImgMob from "../assets/placeholder-profile-img-mob.png"
 import dummyProfileImgTab from "../assets/placeholder-profile-img-tab.png"
 import dummyProfileImgDesk from "../assets/placeholder-profile-img-desk.png"
+import aboutImgSml from "../assets/about-me-img-small.png"
+import aboutImgLrg from "../assets/about-me-img-large.png"
+import aboutImgMed from "../assets/about-me-img-medium.png"
 import headerImgPlaceholder from "../assets/header-img-placeholder.png";
+import headerImg from "../assets/header-img-cropped.png"
 import logoRed from "../assets/logo-red.png";
 
 // ICONS
@@ -36,7 +40,11 @@ export {
   dummyProfileImgMob,
   dummyProfileImgDesk,
   dummyProfileImgTab,
+  aboutImgSml,
+  aboutImgMed,
+  aboutImgLrg,
   headerImgPlaceholder,
+  headerImg,
   CssIcon,
   HtmlIcon,
   JavascriptIcon,
