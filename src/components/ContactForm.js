@@ -16,7 +16,8 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    e.target.submit()
+    console.log("submitted", values)
+    // e.target.submit()
   };
   //
   const { emailError, messageError, nameError, validate } =
