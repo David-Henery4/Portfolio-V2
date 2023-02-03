@@ -16,7 +16,6 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    console.log("submitted", values)
     e.target.submit()
   };
   //
