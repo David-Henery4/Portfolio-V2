@@ -55,7 +55,11 @@ const ContactForm = () => {
         messageError={messageError}
         setFormValues={setFormValues}
       />
-      <input type="hidden" name="_next" value="www.djhwebdevelopment.com/thankyou" />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://www.djhwebdevelopment.com/thankyou"
+      />
     </form>
   );
 };
