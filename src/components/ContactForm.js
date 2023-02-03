@@ -16,12 +16,12 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    // console.log("data submitted", values); // dont show on deploy!
+    e.target.submit()
   };
   //
   const { emailError, messageError, nameError, validate } =
     useValidation(handleFormSubmit);
-    
+
   //
   return (
     <form
@@ -29,7 +29,7 @@ const ContactForm = () => {
       className="w-full flex flex-col justify-center items-center gap-4"
       action="https://formsubmit.co/bca6b7370464360b540d968dc63b44b4"
       method="POST"
-      // onSubmit={(e) => handleValidation(e)}
+      onSubmit={(e) => handleValidation(e)}
     >
       <Input
         inputValue={formValues.name}
