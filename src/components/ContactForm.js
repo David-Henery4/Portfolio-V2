@@ -16,7 +16,7 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    console.log("data submitted", values);
+    // console.log("data submitted", values); // dont show on deploy!
   };
   //
   const { emailError, messageError, nameError, validate } =
@@ -28,7 +28,7 @@ const ContactForm = () => {
       className="w-full flex flex-col justify-center items-center gap-4"
       action="https://formsubmit.co/bca6b7370464360b540d968dc63b44b4"
       method="POST"
-      onSubmit={(e) => handleValidation(e)}
+      // onSubmit={(e) => handleValidation(e)}
     >
       <Input
         inputValue={formValues.name}
