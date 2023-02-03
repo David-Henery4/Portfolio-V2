@@ -16,7 +16,7 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    // console.log("data submitted", values);
+    console.log("data submitted", values);
   };
   //
   const { emailError, messageError, nameError, validate } =
@@ -26,6 +26,8 @@ const ContactForm = () => {
     <form
       id="contact-form"
       className="w-full flex flex-col justify-center items-center gap-4"
+      action="https://formsubmit.co/bca6b7370464360b540d968dc63b44b4"
+      method="POST"
       onSubmit={(e) => handleValidation(e)}
     >
       <Input
@@ -45,7 +47,11 @@ const ContactForm = () => {
         setFormValues={setFormValues}
         inputName="email"
       />
-      <MessageInput formValues={formValues} messageError={messageError} setFormValues={setFormValues}/>
+      <MessageInput
+        formValues={formValues}
+        messageError={messageError}
+        setFormValues={setFormValues}
+      />
     </form>
   );
 };
