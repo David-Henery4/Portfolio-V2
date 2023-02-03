@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion';
 import skillsData from '../skills-data/skillsData';
 import { UnderLine , Bg2Waves} from '../assets'

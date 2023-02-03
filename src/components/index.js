@@ -10,6 +10,8 @@ import HeaderContent from "./HeaderContent";
 import HeaderImage from "./HeaderImage";
 import SingleProjectContent from "./SingleProjectContent";
 import SingleProjectMockup from "./SingleProjectMockup";
+import AboutContent from "./AboutContent";
+import AboutImage from "./AboutImage";
 
 export {
   NavigationBar,
@@ -23,5 +25,7 @@ export {
   HeaderContent,
   HeaderImage,
   SingleProjectContent,
-  SingleProjectMockup
+  SingleProjectMockup,
+  AboutContent,
+  AboutImage,
 }

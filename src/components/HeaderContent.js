@@ -22,12 +22,14 @@ const HeaderContent = () => {
         </span>
       </h1>
       <div className="flex flex-col justify-center items-center gap-7 xtraSm:flex-row">
-        <button className="main-btn-styles primary-btn">Download C.V</button>
+        <Link to="/projects" className="main-btn-styles primary-btn grid place-items-center">
+          Projects
+        </Link>
         <Link
-          to={"/projects"}
+          to="/contact"
           className="main-btn-styles secondary-btn grid place-items-center"
         >
-          Projects
+          Contact
         </Link>
       </div>
     </div>

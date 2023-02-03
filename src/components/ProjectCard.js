@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-
-import { dummyProjectCardImg } from "../assets";
-
 const ProjectCard = ({id, name, descShort, thumbNail }) => {
   return (
     <div className="group w-full h-80 relative rounded-xl overflow-hidden">
@@ -23,7 +20,7 @@ const ProjectCard = ({id, name, descShort, thumbNail }) => {
           <h4 className="text-3xl font-extralight -translate-x-full transition-all group-hover/text:-translate-x-0 ">
             {name}
           </h4>
-          <p className="leading-relaxed tracking-wider text-base -translate-x-full transition-all group-hover/text:-translate-x-0 ">
+          <p className="leading-relaxed tracking-wider text-sm -translate-x-full transition-all group-hover/text:-translate-x-0 ">
             {descShort}
           </p>
           <Link to={`/projects/${id}`} className="primary-btn w-36 h-9 rounded-lg -translate-x-full transition-all group-hover/text:-translate-x-0 grid place-items-center">
