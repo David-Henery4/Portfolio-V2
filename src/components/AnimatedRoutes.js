@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import App from "../App";
 import {
   Header,
@@ -8,6 +8,7 @@ import {
   Skills,
   Contact,
   SingleProject,
+  ThankYou,
 } from "../pages";
 import { AnimatePresence } from "framer-motion";
 
@@ -23,6 +24,8 @@ const AnimatedRoutes = () => {
           <Route path="skills" element={<Skills />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/:projectId" element={<SingleProject />} />
+          <Route path="thankyou" element={<ThankYou/>}/>
+          <Route path="*" element={<Navigate to="/"/>}/>
         </Route>
       </Routes>
     </AnimatePresence>

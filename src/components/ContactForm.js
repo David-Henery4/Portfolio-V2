@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import useValidation from "../hooks/useValidation";
 import {Input, MessageInput} from "../components";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  const navigate = useNavigate()
   const [formValues, setFormValues] = useState({
     name: "",
     re: "",
@@ -53,6 +55,7 @@ const ContactForm = () => {
         messageError={messageError}
         setFormValues={setFormValues}
       />
+      <input type="hidden" name="_next" value="www.djhwebdevelopment.com/thankyou" />
     </form>
   );
 };

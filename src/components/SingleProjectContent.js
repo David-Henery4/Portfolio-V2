@@ -33,7 +33,7 @@ const SingleProjectContent = ({name,descLong, technologiesUsed, liveUrl, repoUrl
           Live Project
         </a>
         <a
-          className="primary-btn main-btn-styles grid place-items-center"
+          className="secondary-btn main-btn-styles grid place-items-center"
           href={repoUrl}
           target="_blank"
           rel="noreferrer"
