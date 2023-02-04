@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import useValidation from "../hooks/useValidation";
-import {Input, MessageInput} from "../components";
-import { useNavigate } from "react-router-dom";
+import { Input, MessageInput } from "../components";
 
 const ContactForm = () => {
-  const navigate = useNavigate()
   const [formValues, setFormValues] = useState({
     name: "",
     re: "",
@@ -18,7 +16,7 @@ const ContactForm = () => {
   };
   //
   const handleFormSubmit = (values, e) => {
-    e.target.submit()
+    e.target.submit();
   };
   //
   const { emailError, messageError, nameError, validate } =
