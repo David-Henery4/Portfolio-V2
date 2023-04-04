@@ -71,9 +71,9 @@ const projectsData = [
     id: 4,
     name: "QK Invoices",
     descShort:
-      "QK Inovices is an fullstack invoice app, which allows users to read, create, update & delete invoices.",
+      "QK Invoices is an full-stack invoice app, which allows users to read, create, update & delete invoices.",
     descLong:
-      "QK Inovices is an fullstack invoice app. The app has authorization & authenication and allows users to create and sign into an account. It also allows users to create, read, update & delete their own invoices. The app has several different features, it has a filter option to filter invoices based on their status, form validation when entering a invoice and it also has a dark/light mode so the user can choose their preference.",
+      "QK Inovices is an fullstack invoice app. The app has authorization & authentication and allows users to create and sign into an account. It also allows users to create, read, update & delete their own invoices. The app has several different features, it has a filter option to filter invoices based on their status, form validation when entering a invoice and it also has a dark/light mode so the user can choose their preference.",
     thumbNail: "invoice-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
