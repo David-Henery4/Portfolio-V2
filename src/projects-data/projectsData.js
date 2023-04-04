@@ -194,17 +194,16 @@ const projectsData = [
   },
   {
     id: 10,
-    name: "Mars Weather",
+    name: "QK Invoices",
     descShort:
-      "Gives the most up to date and available weather data on mars, from nasa's curiosity rover.",
-    descLong:
-      "Provides the users with weather data from mars, from nasa's curiosity rover. It allows them to see the weather for the most current day aswell as the previous week. Also contains a fahrenheit to celsius converter.",
-    thumbNail: "mars-weather-thumb.png",
+      "QK Inovices is an fullstack invoice app, which allows users to read, create, update & delete invoices.",
+    descLong: "QK Inovices is an fullstack invoice app. The app has authorization & authenication and allows users to create and sign into an account. It also allows users to create, read, update & delete their own invoices. The app has several different features, it has a filter option to filter invoices based on their status, form validation when entering a invoice and it also has a dark/light mode so the user can choose their preference.",
+    thumbNail: "invoice-thumb.png",
     deviceMockupsSml: "device-mockups-small.png",
     deviceMockupsLge: "device-mockups-large.png",
-    technologiesUsed: ["HTML", "CSS", "Javascript", "Git", "Parcel"],
-    repoUrl: "https://github.com/David-Henery4/Mars-Weather",
-    liveUrl: "https://mars-tiempo.netlify.app",
+    technologiesUsed: ["HTML", "CSS", "Javascript", "Git", "Vite", "React", "React-Router", "Redux-Toolkit", "TailwindCSS", "Node.js", "MongoDB", "Express.js", "Axios", "Json-Web-Token"],
+    repoUrl: "https://github.com/David-Henery4/Invoice-app-Frontend",
+    liveUrl: "https://qk-invoices.netlify.app/login",
   },
   {
     id: 11,
