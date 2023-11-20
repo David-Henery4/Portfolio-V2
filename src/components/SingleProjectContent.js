@@ -32,14 +32,16 @@ const SingleProjectContent = ({name,descLong, technologiesUsed, liveUrl, repoUrl
         >
           Live Project
         </a>
-        <a
-          className="secondary-btn main-btn-styles grid place-items-center"
-          href={repoUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>
+        {repoUrl === "Repo Private" || (
+          <a
+            className="secondary-btn main-btn-styles grid place-items-center"
+            href={repoUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        )}
       </div>
     </div>
   );

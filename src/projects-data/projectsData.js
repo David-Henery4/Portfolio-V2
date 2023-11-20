@@ -1,6 +1,74 @@
 const projectsData = [
   {
     id: 1,
+    name: "Produck-Feedback",
+    descShort:
+      "A product feedback application, where users can create and interact with feedback for a project they may be working on.",
+    descLong:
+      "Produck feedback is a product feedback app, where users can create, view and edit different posts about feedback they have for a specific product. This app also has many different features like a sort and filter feature, dark mode toggle and the ability to add comments and replies to different posts and many more.",
+    thumbNail: "produck-feedback-thumb.png",
+    deviceMockupsSml: "device-mockups-small.png",
+    deviceMockupsLge: "device-mockups-large.png",
+    technologiesUsed: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "Next.JS",
+      "Next-Auth",
+      "MongoDB",
+      "MongooseJS",
+      "Redux-Toolkit",
+      "TailwindCSS",
+      "Framer Motion",
+    ],
+    repoUrl: "https://github.com/David-Henery4/Produck-Feedback-App",
+    liveUrl: "https://produck-feedback-app.vercel.app",
+  },
+  {
+    id: 2,
+    name: "Elite Aquatics",
+    descShort: "A website I built and designed for a local aquatics company.",
+    descLong:
+      "This is a website I built and designed for a local aquatics company, it has many different features needed for a website like this. It has a testimonial section with live reviews coming from google, A gallery showcasing their work and a form that customers can use to get in touch and enquire about their services.",
+    thumbNail: "elite-aquatics-thumb.png",
+    deviceMockupsSml: "device-mockups-small.png",
+    deviceMockupsLge: "device-mockups-large.png",
+    technologiesUsed: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "Next.JS",
+      "Axios",
+      "Leaflet.JS",
+      "TailwindCSS",
+      "Figma",
+    ],
+    repoUrl: "Repo Private",
+    liveUrl: "https://eliteaquaticsuk.uk",
+  },
+  {
+    id: 3,
+    name: "Dev-Jobs",
+    descShort: "A website displaying different development jobs available.",
+    descLong:
+      "A website listing different dev-jobs that are available. This site has features like being able to filter jobs by title, location, and whether a job is for a full-time position, click a job and see that jobs individual page so that they can read more information and apply for the job and a dark mode toggle which takes in to account the users OS system preference.",
+    thumbNail: "devjobs-thumb.png",
+    deviceMockupsSml: "device-mockups-small.png",
+    deviceMockupsLge: "device-mockups-large.png",
+    technologiesUsed: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "Vue.JS",
+      "TailwindCSS",
+      "Router.vue.js ",
+      "Pinia.vue.js",
+    ],
+    repoUrl: "https://github.com/David-Henery4/dev-jobs",
+    liveUrl: "https://dev-jobs-4u.netlify.app",
+  },
+  {
+    id: 4,
     name: "Audiophile",
     descShort:
       "Audiophile is a multi page Ecommerce site for different audio equipment.",
@@ -22,7 +90,7 @@ const projectsData = [
     liveUrl: "https://audiophile-ecommerce-store.netlify.app",
   },
   {
-    id: 2,
+    id: 5,
     name: "Entertainment",
     descShort:
       "This multi-page entertainment web app, where users can bookmark and search for different shows and movies.",
@@ -47,7 +115,7 @@ const projectsData = [
     liveUrl: "https://thats-entertainment-v1.netlify.app",
   },
   {
-    id: 3,
+    id: 6,
     name: "Kanban Task Manager",
     descShort:
       "Kanban Tasks manager is a fully-functional task management app with a light/dark mode toggle. It also has a drag and drop feature.",
@@ -68,7 +136,7 @@ const projectsData = [
     liveUrl: "https://kanban-taskmanager.netlify.app",
   },
   {
-    id: 4,
+    id: 7,
     name: "QK Invoices",
     descShort:
       "QK Invoices is an full-stack invoice app, which allows users to read, create, update & delete invoices.",
@@ -97,7 +165,7 @@ const projectsData = [
     liveUrl: "https://qk-invoices.netlify.app/login",
   },
   {
-    id: 5,
+    id: 8,
     name: "Designo",
     descShort:
       "Designo is a fictional language multi-page site for a design compnay that offers custom designs and digital branding solutions.",
@@ -121,7 +189,7 @@ const projectsData = [
     liveUrl: "https://designo-customs.netlify.app",
   },
   {
-    id: 6,
+    id: 9,
     name: "Where in the world?",
     descShort:
       "Allows users to search for countries and see information about them.",
@@ -143,7 +211,7 @@ const projectsData = [
     liveUrl: "https://where-abouts-in-the-world.netlify.app",
   },
   {
-    id: 7,
+    id: 10,
     name: "Interactive Comments Section",
     descShort:
       "This is a fully interactive comments section, where users can create, edit, like, reply and delete comments",
@@ -164,7 +232,7 @@ const projectsData = [
     liveUrl: "https://comments-interactive-section.netlify.app",
   },
   {
-    id: 8,
+    id: 11,
     name: "Ip address tracker",
     descShort:
       "Ip Address Tracker let's users see their own Ip address information aswell as search for details about other Ip addresses.",
@@ -187,7 +255,7 @@ const projectsData = [
     liveUrl: "https://ip-address-tracker-mentor.netlify.app",
   },
   {
-    id: 9,
+    id: 12,
     name: "Pay API",
     descShort:
       "This is a 4 page website, for a company that sells and distributes different APIs.",
@@ -208,7 +276,7 @@ const projectsData = [
     liveUrl: "https://apy-api-site.netlify.app",
   },
   {
-    id: 10,
+    id: 13,
     name: "Bookmarks",
     descShort:
       "A landing page for a company that sell software that helps users bookmark and orginise websites.",
@@ -222,7 +290,7 @@ const projectsData = [
     liveUrl: "https://bookmarks-home-landing.netlify.app",
   },
   {
-    id: 11,
+    id: 14,
     name: "myTeam",
     descShort:
       "This is a dashboard style site for people to check for basic information about a football team.",
@@ -243,7 +311,7 @@ const projectsData = [
     liveUrl: "https://myteam-football-dashboard.netlify.app",
   },
   {
-    id: 12,
+    id: 15,
     name: "Pomodoro",
     descShort:
       "A pomodoro timer for users to keep track of time using the pomodoro technique.",

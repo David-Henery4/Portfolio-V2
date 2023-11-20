@@ -1,4 +1,4 @@
-import { CssIcon, HtmlIcon, JavascriptIcon, GitIcon, ReactIcon, ReduxIcon, RouterIcon, SassIcon, TailwindIcon } from "../assets";
+import { CssIcon, HtmlIcon, JavascriptIcon, GitIcon, ReactIcon, ReduxIcon, RouterIcon, SassIcon, TailwindIcon, NextIcon, FigmaIcon, VueIcon } from "../assets";
 
 const skillsData = [
   {
@@ -39,21 +39,39 @@ const skillsData = [
   },
   {
     id: 7,
+    skill: "NextJS",
+    img: "icon-next.svg",
+    svg: <NextIcon className="w-28 h-[74.5%]"/>
+  },
+  {
+    id: 8,
+    skill: "VueJS",
+    img: "icon-vue.svg",
+    svg: <VueIcon className="w-28 h-[74.5%]"/>
+  },
+  {
+    id: 9,
     skill: "React Router",
     img: "icon-router.svg",
     svg: <RouterIcon className="w-28 h-[74.5%]"/>
   },
   {
-    id: 8,
+    id: 10,
     skill: "Redux Toolkit",
     img: "icon-redux.svg",
     svg: <ReduxIcon className="w-28 h-[74.5%]"/>
   },
   {
-    id: 9,
+    id: 11,
     skill: "Git",
     img: "icon-git.svg",
     svg: <GitIcon className="w-28 h-[74.5%]"/>
+  },
+  {
+    id: 12,
+    skill: "Figma",
+    img: "icon-figma.svg",
+    svg: <FigmaIcon className="w-28 h-[74.5%]"/>
   },
 ];
 

@@ -29,6 +29,9 @@ import {ReactComponent as ReduxIcon} from "../assets/skills-icons/icon-redux.svg
 import {ReactComponent as SassIcon} from "../assets/skills-icons/icon-sass.svg"
 import {ReactComponent as TailwindIcon} from "../assets/skills-icons/icon-tailwind.svg"
 import {ReactComponent as GitIcon} from "../assets/skills-icons/icon-git.svg"
+import {ReactComponent as FigmaIcon} from "../assets/skills-icons/icon-figma.svg"
+import {ReactComponent as NextIcon} from "../assets/skills-icons/icon-next.svg"
+import {ReactComponent as VueIcon} from "../assets/skills-icons/icon-vue.svg"
 
 export {
   Logo,
@@ -57,4 +60,7 @@ export {
   BgWavyDottedLine,
   Bg2Waves,
   logoRed,
+  FigmaIcon,
+  NextIcon,
+  VueIcon,
 }
