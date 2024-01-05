@@ -1,6 +1,31 @@
 const projectsData = [
   {
     id: 1,
+    name: "Markdown Editor",
+    descShort:
+      "Fullstack application, where users can sign-in, create, edit & export markdown files. ",
+    descLong:
+      "Markdown Editor allows users to create an account who then can create edit and save, their markdown files. It also has an export feature so users can export their markdown as ether a markdown file or pdf. This project also features a theme toggle, so users can choose their preference of light mode or dark mode. All files are saved and backedup to a mongoDB database.",
+    thumbNail: "markdown-editor-thumb.png",
+    deviceMockupsSml: "device-mockups-small.png",
+    deviceMockupsLge: "device-mockups-large.png",
+    technologiesUsed: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "Next.JS",
+      "Next-Auth",
+      "MongoDB",
+      "MongooseJS",
+      "Puppeteer",
+      "TailwindCSS",
+      "Next-Themes",
+    ],
+    repoUrl: "https://github.com/David-Henery4/Markdown-Editor",
+    liveUrl: "https://markdown-editor-md.vercel.app",
+  },
+  {
+    id: 2,
     name: "Produck-Feedback",
     descShort:
       "A product feedback application, where users can create and interact with feedback for a project they may be working on.",
@@ -25,7 +50,7 @@ const projectsData = [
     liveUrl: "https://produck-feedback-app.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     name: "Elite Aquatics",
     descShort: "A website I built and designed for a local aquatics company.",
     descLong:
@@ -47,7 +72,7 @@ const projectsData = [
     liveUrl: "https://eliteaquaticsuk.uk",
   },
   {
-    id: 3,
+    id: 4,
     name: "Dev-Jobs",
     descShort: "A website displaying different development jobs available.",
     descLong:
@@ -68,7 +93,7 @@ const projectsData = [
     liveUrl: "https://dev-jobs-4u.netlify.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Audiophile",
     descShort:
       "Audiophile is a multi page Ecommerce site for different audio equipment.",
@@ -90,7 +115,7 @@ const projectsData = [
     liveUrl: "https://audiophile-ecommerce-store.netlify.app",
   },
   {
-    id: 5,
+    id: 6,
     name: "Entertainment",
     descShort:
       "This multi-page entertainment web app, where users can bookmark and search for different shows and movies.",
@@ -115,7 +140,7 @@ const projectsData = [
     liveUrl: "https://thats-entertainment-v1.netlify.app",
   },
   {
-    id: 6,
+    id: 7,
     name: "Kanban Task Manager",
     descShort:
       "Kanban Tasks manager is a fully-functional task management app with a light/dark mode toggle. It also has a drag and drop feature.",
@@ -136,7 +161,7 @@ const projectsData = [
     liveUrl: "https://kanban-taskmanager.netlify.app",
   },
   {
-    id: 7,
+    id: 8,
     name: "QK Invoices",
     descShort:
       "QK Invoices is an full-stack invoice app, which allows users to read, create, update & delete invoices.",
@@ -165,7 +190,7 @@ const projectsData = [
     liveUrl: "https://qk-invoices.netlify.app/login",
   },
   {
-    id: 8,
+    id: 9,
     name: "Designo",
     descShort:
       "Designo is a fictional language multi-page site for a design compnay that offers custom designs and digital branding solutions.",
@@ -189,7 +214,7 @@ const projectsData = [
     liveUrl: "https://designo-customs.netlify.app",
   },
   {
-    id: 9,
+    id: 10,
     name: "Where in the world?",
     descShort:
       "Allows users to search for countries and see information about them.",
@@ -211,7 +236,7 @@ const projectsData = [
     liveUrl: "https://where-abouts-in-the-world.netlify.app",
   },
   {
-    id: 10,
+    id: 11,
     name: "Interactive Comments Section",
     descShort:
       "This is a fully interactive comments section, where users can create, edit, like, reply and delete comments",
@@ -232,7 +257,7 @@ const projectsData = [
     liveUrl: "https://comments-interactive-section.netlify.app",
   },
   {
-    id: 11,
+    id: 12,
     name: "Ip address tracker",
     descShort:
       "Ip Address Tracker let's users see their own Ip address information aswell as search for details about other Ip addresses.",
@@ -255,7 +280,7 @@ const projectsData = [
     liveUrl: "https://ip-address-tracker-mentor.netlify.app",
   },
   {
-    id: 12,
+    id: 13,
     name: "Pay API",
     descShort:
       "This is a 4 page website, for a company that sells and distributes different APIs.",
@@ -276,7 +301,7 @@ const projectsData = [
     liveUrl: "https://apy-api-site.netlify.app",
   },
   {
-    id: 13,
+    id: 14,
     name: "Bookmarks",
     descShort:
       "A landing page for a company that sell software that helps users bookmark and orginise websites.",
@@ -290,7 +315,7 @@ const projectsData = [
     liveUrl: "https://bookmarks-home-landing.netlify.app",
   },
   {
-    id: 14,
+    id: 15,
     name: "myTeam",
     descShort:
       "This is a dashboard style site for people to check for basic information about a football team.",
@@ -311,7 +336,7 @@ const projectsData = [
     liveUrl: "https://myteam-football-dashboard.netlify.app",
   },
   {
-    id: 15,
+    id: 16,
     name: "Pomodoro",
     descShort:
       "A pomodoro timer for users to keep track of time using the pomodoro technique.",
