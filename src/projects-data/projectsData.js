@@ -11,7 +11,6 @@ const projectsData = [
     deviceMockupsLge: "device-mockups-large.png",
     technologiesUsed: [
       "HTML",
-      "CSS/SCSS",
       "Javascript",
       "Next.JS",
       "Next-Auth",
