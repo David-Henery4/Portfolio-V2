@@ -10,6 +10,7 @@ module.exports = {
       accentOrangeYellow: "#FF9D00",
       darkShade: "#060B1D",
       lightShade: "#DBE8F0",
+      lightNavy: "#0D142D",
     },
     extend: {
       gridTemplateColumns: {
@@ -19,6 +20,9 @@ module.exports = {
         xlDeskGrid: "24px 1fr 50px repeat(10,1fr) 50px",
         projectGrid: "repeat(auto-fit, minmax(250px,.75fr))",
         skillsGrid: "repeat(auto-fit, minmax(220px, 1fr))",
+      },
+      gridTemplateRows: {
+        projectCard: "13rem 1fr",
       },
       gridAutoRows: {
         deskRows: "min-content 1fr",

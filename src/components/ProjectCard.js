@@ -1,35 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({id, name, descShort, thumbNail }) => {
+const ProjectCard = ({ id, name, descShort, thumbNail }) => {
+  //
   return (
-    <div className="group w-full h-80 relative rounded-xl overflow-hidden">
+    <div className="grid grid-rows-projectCard w-full p-4 relative rounded-xl bg-lightNavy">
       <img
-        className="w-full h-full object-cover object-top absolute top-0 left-0"
+        className="w-full h-52 object-cover object-top rounded-t-[8px]"
         src={require(`../assets/project-assets/thumbs/${thumbNail}`)}
         alt=""
       />
-      <div className="bg-darkShade/50 w-full h-full relative z-10 pt-10">
-        <div className="bg-primaryBlack w-5/6 py-3 text-2xl text-center">
-          <h3>{name}</h3>
+      <div className="w-full text-left mt-4 flex flex-col justify-between items-start">
+        <div>
+          <h2 className="text-xl font-bold text-primaryWhite">{name}</h2>
+          <p className="card-text">{descShort}</p>
         </div>
-      </div>
-      <div className="hidden z-10 text-left absolute top-0 left-0 w-full h-full group-hover:block">
-        <div className="absolute top-0 left-0 w-full h-full bg-primaryBlack/90"></div>
-        <div className="relative z-10 flex-col justify-center items-start gap-5 group-hover:flex h-full w-full group/text p-2">
-          <h4 className="text-3xl font-extralight -translate-x-full transition-all group-hover/text:-translate-x-0 ">
-            {name}
-          </h4>
-          <p className="leading-relaxed tracking-wider text-sm -translate-x-full transition-all group-hover/text:-translate-x-0 ">
-            {descShort}
-          </p>
-          <Link to={`/projects/${id}`} className="primary-btn w-36 h-9 rounded-lg -translate-x-full transition-all group-hover/text:-translate-x-0 grid place-items-center">
-            More Info
-          </Link>
-        </div>
+        <Link
+          to={`/projects/${id}`}
+          className="primary-btn w-full p-3 text-center rounded-lg mt-6"
+        >
+          More Info
+        </Link>
       </div>
     </div>
   );
 };
 
-export default ProjectCard
+export default ProjectCard;
