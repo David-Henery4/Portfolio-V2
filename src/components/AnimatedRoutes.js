@@ -11,9 +11,10 @@ import {
   ThankYou,
 } from "../pages";
 import { AnimatePresence } from "framer-motion";
+import StudioApp from "../pages/SanityApp";
 
 const AnimatedRoutes = () => {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <AnimatePresence initial={false} mode={"wait"}>
       <Routes location={location} key={location.pathname}>
@@ -24,9 +25,10 @@ const AnimatedRoutes = () => {
           <Route path="skills" element={<Skills />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/:projectId" element={<SingleProject />} />
-          <Route path="thankyou" element={<ThankYou/>}/>
-          <Route path="*" element={<Navigate to="/"/>}/>
+          <Route path="thankyou" element={<ThankYou />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
+        <Route path="/studio" element={<StudioApp />} />
       </Routes>
     </AnimatePresence>
   );
