@@ -8,7 +8,7 @@ const SingleProjectMockup = ({ mockupSm = null, mockupLg= null }) => {
     <div className="pt-12 w-full flex flex-col items-start justify-center gap-11 smDesk:pt-24 smDesk:gap-0 smDesk:h-full smDesk:justify-center">
       <Link
         to="/projects"
-        className="primary-btn w-24 h-7 grid place-items-center rounded-md font-light smDesk:mb-auto"
+        className="primary-btn w-24 h-7 grid place-items-center rounded-md font-light smDesk:mb-40"
       >
         Back
       </Link>
