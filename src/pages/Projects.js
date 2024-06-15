@@ -24,7 +24,9 @@ const Projects = () => {
         };
       });
       setIsLoading(true)
-      const list = await client.fetch("*[_type == 'project']");
+      const list = await client.fetch(
+        "*[_type == 'project'] | order(_createdAt asc)"
+      );
       setProjectsList(list);
       setCurrentlyShown(list?.slice(0, 8));
       setIsLoading(false);
