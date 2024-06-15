@@ -4,8 +4,8 @@ const projectId = process.env.REACT_APP_PUBLIC_SANITY_PROJECT_ID || "";
 const dataset = process.env.REACT_APP_PUBLIC_SANITY_DATASET || "";
 
 const imageBuilder = createImageUrlBuilder({
-  projectId: projectId,
-  dataset: dataset,
+  projectId: "3x68j9xe",
+  dataset: "production",
 });
 
 export const urlForImage = (source) => {
