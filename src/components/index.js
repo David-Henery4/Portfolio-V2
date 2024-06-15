@@ -12,6 +12,7 @@ import SingleProjectContent from "./SingleProjectContent";
 import SingleProjectMockup from "./SingleProjectMockup";
 import AboutContent from "./AboutContent";
 import AboutImage from "./AboutImage";
+import LoadingSpinner from "./LoadingSpinner";
 
 export {
   NavigationBar,
@@ -28,4 +29,5 @@ export {
   SingleProjectMockup,
   AboutContent,
   AboutImage,
-}
+  LoadingSpinner,
+};

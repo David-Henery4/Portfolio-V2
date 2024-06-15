@@ -1,11 +1,17 @@
 import React from 'react'
 
-const SingleProjectContent = ({name,descLong, technologiesUsed, liveUrl, repoUrl}) => {
+const SingleProjectContent = ({
+  descLong,
+  technologiesUsed,
+  liveUrl,
+  repoUrl,
+  projectName,
+}) => {
   return (
     <div className="w-full flex-col flex justify-center items-center gap-14 smDesk:py-24 smDesk:items-start">
       <section className="w-full text-center flex flex-col justify-center items-center gap-10 smDesk:items-start smDesk:text-left">
         <h2 className="text-5xl font-extralight smTab:text-7xl break-all xtraSm:break-normal">
-          {name}
+          {projectName}
         </h2>
         <p className="leading-relaxed tracking-wider text-base max-w-md">
           {descLong}
@@ -45,6 +51,6 @@ const SingleProjectContent = ({name,descLong, technologiesUsed, liveUrl, repoUrl
       </div>
     </div>
   );
-}
+};
 
 export default SingleProjectContent

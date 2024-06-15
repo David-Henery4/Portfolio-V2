@@ -28,7 +28,7 @@ const AnimatedRoutes = () => {
           <Route path="thankyou" element={<ThankYou />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
-        <Route path="/studio" element={<StudioApp />} />
+        <Route path="/studio/*" element={<StudioApp />} />
       </Routes>
     </AnimatePresence>
   );
