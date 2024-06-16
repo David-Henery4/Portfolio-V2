@@ -9,7 +9,7 @@ const Projects = () => {
   const [numOfShown, setNumOfShown] = useState(8);
   const [projectsList, setProjectsList] = useState([]);
   const [currentlyShown, setCurrentlyShown] = useState([]);
-  const [isLoading,setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({
     isError: false,
     msg: "Error loading projects, please try again later.",
@@ -23,9 +23,9 @@ const Projects = () => {
           isError: false,
         };
       });
-      setIsLoading(true)
+      setIsLoading(true);
       const list = await client.fetch(
-        "*[_type == 'project'] | order(_createdAt asc)"
+        "*[_type == 'project'] | order(orderRank)"
       );
       setProjectsList(list);
       setCurrentlyShown(list?.slice(0, 8));

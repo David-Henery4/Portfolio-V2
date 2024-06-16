@@ -1,4 +1,5 @@
 import { defineType, defineField } from "sanity";
+import { orderRankField,  } from "@sanity/orderable-document-list";
 
 const projectSchema = defineType({
   title: "Project",
@@ -57,6 +58,7 @@ const projectSchema = defineType({
       name: "repoUrl",
       type: "url",
     }),
+    orderRankField({type: "project", newItemPosition: "before"}),
   ],
 });
 

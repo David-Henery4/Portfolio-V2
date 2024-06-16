@@ -32,6 +32,7 @@ import {ReactComponent as GitIcon} from "../assets/skills-icons/icon-git.svg"
 import {ReactComponent as FigmaIcon} from "../assets/skills-icons/icon-figma.svg"
 import {ReactComponent as NextIcon} from "../assets/skills-icons/icon-next.svg"
 import {ReactComponent as VueIcon} from "../assets/skills-icons/icon-vue.svg"
+import {ReactComponent as SanityIcon} from "../assets/skills-icons/icon-sanity.svg"
 
 export {
   Logo,
@@ -63,4 +64,5 @@ export {
   FigmaIcon,
   NextIcon,
   VueIcon,
+  SanityIcon,
 }
