@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { BgCircle } from "../assets";
 import { ContactForm } from "../components";
 
+
 const Contact = () => {
   return (
     <motion.main
