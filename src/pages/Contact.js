@@ -23,12 +23,6 @@ const Contact = () => {
       </h2>
       <div className="w-full grid gap-5 max-w-xl">
         <ContactForm />
-        <button
-          form="contact-form"
-          className="primary-btn main-btn-styles justify-self-center"
-        >
-          Submit
-        </button>
       </div>
     </motion.main>
   );
